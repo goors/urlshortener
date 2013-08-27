@@ -1,0 +1,267 @@
+/* ###########################################
+   ##  Name: Nikola Derikonjic - pregmatch.org Sys admin ##
+   ##  Author: Nikola                          ##
+   ##  File: style.css                         ##
+   ###########################################
+*/
+
+html, body { 
+            height:100%; 
+            margin: 0;
+            font-size: 18px;
+            
+        }
+        #header{
+            width: 100%; 
+            height: 3%; 
+            border-bottom: 1px solid #cccccc;
+            display: table;
+        }
+        #footer {
+            color: #cccccc;
+            text-align: center;
+            font-size: 15px;
+        }
+        #content{
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+        }
+        #header .links{
+            padding: 5px;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        .copyright{
+            background-color: #FFFFFF;
+        }
+        .copyright a{
+            text-decoration: none;
+            color: #999999;
+        }
+        .copyright a.active{
+            color: #12b9e6;
+            text-decoration: underline;
+        }
+        .copyright div{
+            color: #999999;
+        }
+        #header .labs{
+            float: right;
+        }
+        #header .language{
+            float: left;
+        }
+        #footer .copyright {
+            padding: 5px;
+            
+            font-family: sans-serif;
+        } 
+        #fun_part{
+            width: 578px;
+           margin-top: 15%;
+           margin-left:auto;
+           margin-right: auto;
+        }
+        #fun_part .h{
+            height: 62px;
+        }
+        #fun_part .s{
+            width: 384px;
+            
+        }
+        #fun_part .s input{
+            border: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            
+        }
+        #fun_part .h div{
+            float: left;
+        }
+        #fun_part .a{
+            width: 578px;
+            margin-top: 10px;
+           
+        }
+        #fun_part .a div{
+            float: left;
+           
+        }
+        #fun_part .a .ins{
+            width: 384px;
+            text-align: right;
+            float: right;
+            font-family: sans-serif;
+            font-size: 18px;
+           
+        }
+        #fun_part .r{
+            width: 578px;
+            float: left;
+            margin-top: 30px;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        #fun_part .r a.active{
+            text-decoration: underline;
+            font-weight: bold;
+            color: #000000;
+        }
+        .long_link{
+            width: 97%;
+            border: 1px solid #cccccc;
+            padding: 7px;
+            font-family: sans-serif;
+            font-size: 18px;
+            
+            
+        }
+        #make_me_short{
+            background-image: url('../images/btn-search.png');
+            width: 102px;
+            height: 31px;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        #message_div{
+            display: none;
+            background-color: #ffcc00;
+            padding: 4px;
+            color: #000000;
+            margin-bottom: -4px;
+            font-weight: bold;
+            font-size: 12px;
+            font-family: sans-serif;
+            width: 90%;
+        }
+        #short_url{
+            background: none;
+            border: none;
+        }
+        #copy_message{
+            display: none;
+            font-size: 11px;
+            font-family: sans-serif;
+            padding: 3px;
+        }
+        #lk a{
+            background-color: #0099ff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #message_div a:hover{
+            text-decoration: underline;
+        }
+        #message_div a{
+            text-decoration: none;
+        }
+        #human-read{
+            width:30%; margin-right: 0px; float: right; height: 100%; border-left: 1px solid #cccccc; display: none; 
+            
+            
+        }
+        #holder{
+            padding: 10px;
+        }
+        #holder #title{ 
+            width: 99%;background-color: #666666; color: white; padding: 4px;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        #holder #text{ 
+            width: 99%;padding: 4px;
+            font-size: 13px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        #loading{
+            display: none; margin-top: 4px;
+        }
+        .code_div{
+            width: 90%;
+            overflow: auto;
+            margin-bottom: 10px;
+        }
+        .chrome-holder{
+            width: 200px;
+            height: 120px;
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .short_url_input{
+            border: 1px solid #cccccc;
+            padding: 3px;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        #copy_message_chrome{
+            font-size: 13px;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        .open_url {
+            font-size: 13px;
+            font-weight: normal;
+            text-decoration: none;
+            color: #0099ff;
+        }
+        .open_url:hover {
+            text-decoration: underline;
+        }
+        #short-message{
+            margin-bottom: 5px;
+        }
+        #title-holder{
+            height: 30px;
+            
+            
+        }
+        #title-holder div{
+            float: left;
+            width: 24%;
+        }
+        #my_links{
+            width:100%; height: 250px; margin: 0 auto; overflow-y: scroll;overflow-x: hidden;
+            font-family: sans-serif; font-size: 13px; 
+            
+            padding: 10px;
+        }
+        #TB_closeAjaxWindow{
+            color: black;
+        }
+        #title-holder{
+            width: 100%;
+        }
+        #long_link{
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: 5px;
+            
+        }
+        #long_link a{
+            text-decoration: none;
+            color: #000000;
+        }
+        #long_link a:hover{
+            text-decoration: underline;
+            
+        }
+        #short_link{
+            text-decoration: none;
+            color: black;
+        }
+        .short_link a{
+            text-decoration: none;
+            color: black;
+        }
+        .short_link a:hover{
+            text-decoration: underline;
+            
+        }

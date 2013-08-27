@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>UrlShortener</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="chrome.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.client.js"></script>
+        <script type="text/javascript" src="jquery-cookie.js"></script>
+        <script type="text/javascript" src="goo.rs.js"></script>
+        
+    </head>
+    <body >
+        <div class="chrome-holder">
+            <div id="short-url">
+                <div id="short-message"></div>
+                <input type="text" name="short_url" id="short_url" class="short_url_input" />
+                <div id="copy_message_chrome"></div>
+                <input type="hidden" id="mac_copy" value="Press ⌘-C to copy." />
+                <input type="hidden" id="windows_copy" value="Press Ctrl-C to copy." />
+                <input type="hidden" id="other_copy" value="Right click to copy." />
+            </div>
+            <div id="short-url-action">
+            </div>
+        </div>
+    </body>
+</html>

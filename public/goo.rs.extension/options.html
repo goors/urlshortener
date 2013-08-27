@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>goo.rs - options</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+        <meta http-equiv="PRAGMA" content="NO-CACHE" />
+        <link href="http://goo.rs/css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://goo.rs/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="http://goo.rs/js/jquery-cookie.js"></script>
+        <script language="JavaScript" type="text/javascript">
+            $(document).ready(function(){
+                $("#make_human_url").click(function(){
+                    if($.cookie("make_human_url") == '0'){
+                        $.cookie("make_human_url", 1, {
+                            //expires : 10,           
+                            //path    : '/',          
+                            //domain  : 'goo.rs'  
+                        });
+                    }
+                    else{
+                        $.cookie("make_human_url", 0, {
+                            expires : 10           
+                            //path    : '/',          
+                            //domain  : 'goo.rs'  
+                        });
+                    }
+                    console.log($.cookie("make_human_url"));
+                });
+                if($.cookie("make_human_url") == '1'){
+                    $("#make_human_url").attr("checked",true);
+                    $("#make_human_url").val('0');
+                }
+                else{
+                    $("#make_human_url").attr("checked",false);
+                    $("#make_human_url").val('1');
+                }
+                //alert( $.cookie("make_human_url") );
+            })
+            
+        </script>
+    </head>
+<body>
+    <div id="content" style="font-family: sans-serif; font-size: 13px;">
+        <div id="fun_part" style="padding: 10px;-moz-box-shadow: 0 0 5px #888;-webkit-box-shadow: 0 0 5px#888;box-shadow: 0 0 5px #888;">
+            <div style="float: left; text-align: center; font-size: 17px;">
+                <img src="http://goo.rs/images/logo.png"/> <br />
+                <a href="http://goo.rs/">http://goo.rs/</a>
+            </div>
+            <div style="float: right; width: 370px;">
+            Zdravo, ovo je stranica vezana za opcije Vaseg url shortenera.
+            Kao i na sajtu <a href="http://goo.rs/">http://goo.rs/</a> i ova ekstenzija moze praviti logicne adrese (pametne adrese).
+            <br /><br />Koristite sledecu opciju kako bi ukljucili ili iskljucili pametne adrese.<br /> <br />
+            <input type="checkbox" value="1" id="make_human_url" /> <b>Napravi pametnu adresu.</b>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="footer">
+        <div style="margin-top: 10px;">
+            © pregmatch.org
+        </div>
+    </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "goo.rs - URL shortener",
+  "version": "2.0",
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "description": "goo.rs sluzi za pravljenje kratkih urlova.",
+  "browser_action": {
+  "default_icon": "chrome-icon.png",    
+  "default_title": "Click to make short url.",
+  "default_popup": "chrome.html"
+  },
+ "icons": { 
+            "48": "chrome-icon-48.png",
+            "128": "chrome-icon-128.png"
+           },
+  "permissions": [
+    "tabs",
+    "http://goo.rs/"
+  ]
+  
+  
+  
+  
+  
+}
