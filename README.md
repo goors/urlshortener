@@ -19,3 +19,9 @@ Install
 3) Setup your datebase by running ./vendor/bin/doctrine-module orm:schema-tool:update  --force
 
 4) Point your browser to url that you defined
+
+
+Aboout
+============
+
+This url shortener has tf-idf method
