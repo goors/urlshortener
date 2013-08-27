@@ -1,0 +1,76 @@
+
+<?php $this->headScript()->prependFile($this->basePath() . '/js/jquery.snippet.min.js') ?>
+ <?php echo $this->headLink()
+                        //->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/jquery.snippet.min.css')
+                        //->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+                ?>
+<div class="form-holder">
+    <div class="short-link module">
+        <span>What Human readable means?</span>
+    </div>
+    <div class="long-link-input module" style="font-weight: normal; font-size: 12px;">
+        
+        By implementing  term frequency–inverse document frequency on parsed text from web page
+        I was able to extract default keyword that give that web page meaning, or describes that web page.
+        <br /> <br />
+        1) I used Lynx to extract all text from web page. <br />
+        2) Then save that text into some txt file. <br />
+        3) After that all you have to do is read text from that file and implement tf-idf method. <br />
+        
+        <h2>Tf-idf code</h2>
+        <pre>
+        <?php
+$code ='
+/**
+ * returns string with max tf-idf value
+ *
+ * @author Nikola Derikonjic
+ */
+namespace Api\Human;
+
+class Human {
+    
+    public static function getKeyword($url){
+        exec("/usr/bin/lynx -accept_all_cookies -dump ".$url." > ".__DIR__."/../../data/logs/human");
+        
+        $handle = fopen(__DIR__."/../../data/logs/human", "r");
+        $text = fread($handle, filesize(__DIR__."/../../data/logs/human"));
+        $text = explode(" ",$text);
+        foreach ($text as $key => $word ) {
+            if (strlen($word) >=5 && strlen($word)<8) {
+                $words[] = $word;
+            }
+        }
+        $count = array_count_values($words);
+        array_multisort($count,SORT_DESC);
+        $reci = array();
+        foreach ($count as $key => $value) {
+            if(!empty($key)){
+                array_push($reci, array($key=>$value/count($text)));
+            }
+       }
+       foreach (max($reci) as $key=>$val){
+            return strtolower($key);
+       }
+    }
+}';
+echo $code;
+        ?>
+        </pre>
+        More on TF-IDF here
+        <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf" target="_blank">http://en.wikipedia.org/wiki/Tf%E2%80%93idf</a>
+        
+        <br> <br>
+        
+        <a href="/code/Human.php.zip">Download php class here</a>.
+    </div>
+    
+    
+</div>
+<script>
+
+    $(document).ready(function(){
+        $("pre").snippet("php",{style:"acid", transparent:true,showNum:true}); ;
+    })
+</script>

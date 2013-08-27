@@ -1,0 +1,51 @@
+
+<div class="form-holder">
+    <div class="short-link module">
+        <span>API</span>
+    </div>
+    <div class="long-link-input module" style="font-weight: normal; font-size: 12px;">
+        
+        API uses only $_POST. 
+        <br>
+        <br>
+        <b>API methods</b>
+        <br>
+        <br>
+        1) makeShortUrl <br />
+        <br />
+            - method receives one mandatory parameter url and one option parameter human <br />
+            - method returns Json code {short_url: randomstring } <br />
+            <br>
+            <br>
+            <b>Example</b>
+            <br>
+            <br>
+            Jquery: $.post("http://goo.rs/api/make-short-url",{url: 'http://google.com', human:0});
+        <br>
+        <br>
+        2) getNumberOfClicks <br />
+        <br />
+            - method receives one mandatory parameter short_url  <br />
+            - method returns Json code {clicks: (int)no_of_clicks, short_url: short_url} <br />
+            <br>
+            <br>
+            <b>Example</b>
+            <br>
+            <br>
+            Jquery: $.post("http://goo.rs/api/get-number-of-clicks",{short_url: 'http://goo.rs/shorturl'});
+        <br>
+        <br>
+        3) getLinksStats <br />
+        <br />
+            - method receives one mandatory parameter short_url  <br />
+            - method returns Json code {host: (string)host, ip: (string)ip, date: dateObject, short_url:(string)short_url} <br />
+            <br>
+            <br>
+            <b>Example</b>
+            <br>
+            <br>
+            Jquery: $.post("http://goo.rs/api/get-link-stats",{short_url: 'http://goo.rs/shorturl'});
+    </div>
+    
+    
+</div>

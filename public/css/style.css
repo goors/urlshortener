@@ -1,0 +1,116 @@
+h1{
+                margin: 0px;
+                padding: 0px;
+            }
+            html, body{
+                /*background-color: #e5e5e5 ;*/
+                background-color: #fdfdfd ;
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial;
+            }
+            .line{
+                background-color: #414246; height: 4px;
+            }
+            
+            .navbar{
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                
+            }
+            .nav{
+                
+                width: 732px; margin: 0 auto;
+            }
+            .module{
+                margin-top: 30px;
+            }
+            .social{
+                height: 36px;
+            }
+            .social img{
+                float: right;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .menu ul{
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+            }
+            .menu  ul li:hover, a:hover{
+                background-color: #bcbcbc;
+                
+            }
+            .menu ul li {
+                float: left;
+                margin-right: 10px;
+                list-style: none;
+                
+            }
+            .menu ul li a {
+                color: #ccc;
+                padding: 10px;
+                text-decoration: none;
+                padding-bottom: 1px;
+            }
+            .menu ul li a:hover {
+                color: #fff;
+            }
+            .menu ul li.active a {
+                color: #fff;
+                background-color: #bcbcbc;
+            }
+            .container{
+                width: 100%;
+            }
+            .form-holder{
+                width: 732px;
+                margin: 0 auto;
+            }
+            .long-link-input input{
+                background-color: #e7e5e5;
+                color: #fff;
+                height: 70px;
+                border: none;
+                width: 712px;
+                font-size: 24pt;
+                padding-left: 20px;
+            }
+            .make-it-short{
+                border: none;
+                cursor: pointer;
+                background-color: #f8f8f8;
+                color: #999;
+                width: 144px;
+                height: 31px;
+            }
+            .checkbox{
+                border: 1px solid #ccc;
+                background-color: #f8f8f8;
+            }
+            
+            .form-actions label{
+                float: right;
+            }
+            .api{
+                width: 732px;
+                margin: 0 auto;
+            }
+            .copyright{
+                font-size: 11px;
+                float: right;
+                padding-top: 67px;
+            }
+            .copyright a{
+                color: #ccc;
+            }
+            .copyright a:hover{
+                color: #ccc;
+                background-color: #fff;
+                text-decoration: none;
+            }
+            input[type=checkbox].css-checkbox { position: absolute;  overflow: hidden;  clip: rect(0 0 0 0);  height:1px;  width:1px;  margin:-1px;  padding:0; border:0; }  input[type=checkbox].css-checkbox + label.css-label { font-size: 12px !important; padding-left:20px; height:15px;  display:inline-block; line-height:15px; background-repeat:no-repeat; background-position: 0 0; font-size:15px; vertical-align:middle; cursor:pointer; }  input[type=checkbox].css-checkbox:checked + label.css-label { background-position: 0 -15px; }  .css-label{ background-image:url(/img/lite-gray-check.png); }
+            .short-link span{
+                font-size: 23px;
+            }
